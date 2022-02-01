@@ -103,6 +103,29 @@ object 到 boolean的转换：所有的对象（包括数组和函数）都转�
 
 
 
+funcion(函数)
+
+function showNumber(count){
+   alert(count ?? "unknown");
+}
+
+
+function showMessage(message){
+  return message ?? "unknown";
+}
+alert(showMessage(123));
+
+
+let result = showMessage(message){
+  return message ?? "unknown";
+}
+alert(result(12));
+
+let result = (message) => message ?? "unknown";
+alert(result());
+
+
+
 
 其他：
 
