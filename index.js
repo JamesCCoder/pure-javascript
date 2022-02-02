@@ -132,8 +132,37 @@ alert(result());
 
 let user = {     // 一个对象
   name: "John",  // 键 "name"，值 "John"
-  age: 30        // 键 "age"，值 30
+  age: 30，       // 键 "age"，值 30
+  "likes birds": true
 };
+
+
+设置属性：
+user.name = "Jack";
+user["likes birds"] = true;
+
+读取属性：
+alert(user.name);
+alert(user["likes birds"]); // true
+
+删除属性：
+delete user.age;
+delete user["likes birds"];
+
+
+
+for...in... 循环
+
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+for(let key in user){
+  alert(key);
+  alert(user[key]);
+}
 
 
 
@@ -158,3 +187,50 @@ alert(`This is ${a}`);                         /* 没有引号 */
 
    let a = alert(firstname || lasrname || nickname || "anonymous");
    let b = alert(firstname ?? lasrname ?? nickname ?? "anonymous");
+
+5.拷贝
+
+  假拷贝
+
+  let user = {
+    name : "Jack"
+  };
+
+  let admin = user;
+
+  admin.name = "Tom";
+  alert(user.name);        // "Tom"
+
+  浅拷贝1
+
+  let user = {
+    name: "Jack",
+    age: 16
+  };
+
+  let clone = {};
+
+  for(let key in user){
+    clone[key] = user[key];
+  }
+
+  clone.name = "Ton";
+  alert(user.name);
+
+  浅拷贝2
+
+  let user = { name: "John" };
+
+  let permissions1 = { canView: true };
+  let permissions2 = { canEdit: true };
+
+  Object.assign(user, permissions1, permissions2);
+
+  let user = {
+    name: "John",
+    age: 30
+  };
+  
+  let clone = Object.assign({}, user);
+
+  深拷贝
