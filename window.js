@@ -5,17 +5,33 @@
 
 
 
-          DOM
+          DOM                                                        BOM
 
-            document
+            document                                              navigator
 
       
-      document.documentElement
+      document.documentElement   <html>
 
         
-      document.head
+      document.head              <head>
 
 
-      document.body
+      document.body              <body>
 
-      
+      for EVERYNODE:       
+      parentNode childNodes 
+      previousSibling  nextSibling
+      firstChild lastChild
+
+      for ELEMENTNODE(No TextNode or NoteNode)
+      parentElement children
+      previousElementSibling nextElementSibling
+      firstElementChild lastElementChild
+
+
+      搜索网页元素的其他方法：
+
+      getElementById
+      getElementByName
+      getElementByTagName
+      getElementbyClassName

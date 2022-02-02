@@ -234,3 +234,11 @@ alert(`This is ${a}`);                         /* 没有引号 */
   let clone = Object.assign({}, user);
 
   深拷贝
+
+
+
+
+6. for...in 和 for...of 区别
+
+   forin 显示 object 的 key， 适用于所有object
+   forof 显示 object 的 元素
