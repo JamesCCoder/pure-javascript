@@ -127,6 +127,16 @@ alert(result());
 
 
 
+对象 object
+对象则用来存储键值对和更复杂的实体
+
+let user = {     // 一个对象
+  name: "John",  // 键 "name"，值 "John"
+  age: 30        // 键 "age"，值 30
+};
+
+
+
 其他：
 
 1.字符串的引用
